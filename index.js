@@ -26,7 +26,7 @@ export default {
      * @param {number} size
      * @returns {number}
      */
-    scaleText = size => {
+    scaleText: size => {
         size = Math.round(size * scale / fontScale);
         return size;
     },
@@ -35,7 +35,7 @@ export default {
      * @param {number} size
      * @returns {number}
      */
-    scaleSize = size => {
+    scaleSize: size => {
         size = Math.round(size * scale);
         return size;
     }
