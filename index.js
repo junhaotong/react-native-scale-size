@@ -20,23 +20,24 @@ const w2 = 750 / defaultPixel;
 const h2 = 1334 / defaultPixel;
 const scale = Math.min(deviceHeight / h2, deviceWidth / w2); //获取缩放比例
 
-/**
- * 设置text
- * @param {number} size
- * @returns {number}
- */
-export const scaleText = size => {
-    size = Math.round(size * scale / fontScale);
-    return size;
-}
-
-/**
- * 设置size
- * @param {number} size
- * @returns {number}
- */
-export const scaleSize = size => {
-    size = Math.round(size * scale);
-    return size;
+export default {
+    /**
+     * 设置text
+     * @param {number} size
+     * @returns {number}
+     */
+    scaleText = size => {
+        size = Math.round(size * scale / fontScale);
+        return size;
+    },
+    /**
+     * 设置size
+     * @param {number} size
+     * @returns {number}
+     */
+    scaleSize = size => {
+        size = Math.round(size * scale);
+        return size;
+    }
 }
 
