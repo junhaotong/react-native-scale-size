@@ -1,0 +1,25 @@
+{
+  "name": "react-native-scale-util",
+  "version": "1.0.0",
+  "description": "React Native 屏幕适配工具类",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junhaotong/react-native-scale-util.git"
+  },
+  "keywords": [
+    "React",
+    "Native",
+    "util",
+    "scale-util"
+  ],
+  "author": "Jeremy <15869294164@163.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/junhaotong/react-native-scale-util/issues"
+  },
+  "homepage": "https://github.com/junhaotong/react-native-scale-util#readme"
+}
