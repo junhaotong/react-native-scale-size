@@ -7,17 +7,20 @@ import {
     Dimensions,
     PixelRatio,
 } from 'react-native';
-
-export const deviceWidth = Dimensions.get('window').width;          //设备的宽度
-export const deviceHeight = Dimensions.get('window').height;        //设备的高度
-let fontScale = PixelRatio.getFontScale();                          //返回字体大小缩放比例
-
-const defaultPixel = 2;                                             //iphone6的像素密度
+//设备的宽度
+export const deviceWidth = Dimensions.get('window').width;
+//设备的高度
+export const deviceHeight = Dimensions.get('window').height;
+//字体大小缩放比例
+let fontScale = PixelRatio.getFontScale();
+//iphone6的像素密度
+const defaultPixel = 2;
 
 //px转换成dp
-const w2 = 750 / defaultPixel;
-const h2 = 1334 / defaultPixel;
-const scale = Math.min(deviceHeight / h2, deviceWidth / w2); //获取缩放比例
+const w = 750 / defaultPixel;
+const h = 1334 / defaultPixel;
+//获取缩放比例
+const scale = Math.min(deviceHeight / h, deviceWidth / w);
 
 export default {
     /**
@@ -39,4 +42,3 @@ export default {
         return size;
     }
 }
-
