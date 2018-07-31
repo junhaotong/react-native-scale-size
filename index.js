@@ -22,7 +22,6 @@ import {
   // 字体大小缩放比例(Android下可设置字体大小)
   let fontScale = PixelRatio.getFontScale();
   
-  console.log(fontScale);
   // 获取缩放比例
   const scale = deviceWidth / defaultDevice.width;
   
