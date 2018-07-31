@@ -1,6 +1,6 @@
 /**
- * 屏幕工具类
- * ui设计基准,iPhone6
+ * React Native 适配工具类
+ * 以iPhone6为基准
  */
 
 import {
@@ -13,22 +13,22 @@ const defaultDevice = {
   width: 750,
   height: 1334
 }
-//设备的宽度
-const deviceWidth = Dimensions.get('window').width;
 
-//设备的高度
-// const deviceHeight = Dimensions.get('window').height;
+// 设备的宽
+const {
+    width: deviceWidth
+} = Dimensions.get('window');
 
-//字体大小缩放比例(Android下可设置字体大小)
+// 字体大小缩放比例(Android下可设置字体大小)
 let fontScale = PixelRatio.getFontScale();
 
-//iPhone6的像素密度
+// iPhone6的像素密度
 const defaultPixel = 2;
 
-//计算iPhone6 px尺寸
+// 计算iPhone6 px尺寸
 const width = defaultDevice.width / defaultPixel;
 
-//获取缩放比例
+// 获取缩放比例
 const scale = deviceWidth / width;
 
 /**
