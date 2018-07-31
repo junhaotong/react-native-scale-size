@@ -8,10 +8,10 @@ import {
   PixelRatio,
 } from 'react-native';
 
-// iPhone6 dp尺寸
+// iPhone6 尺寸
 const defaultDevice = {
-  width: 750,
-  height: 1334
+  width: 375,
+  height: 667
 }
 
 // 设备的宽
@@ -22,27 +22,21 @@ const {
 // 字体大小缩放比例(Android下可设置字体大小)
 let fontScale = PixelRatio.getFontScale();
 
-// iPhone6的像素密度
-const defaultPixel = 2;
-
-// 计算iPhone6 px尺寸
-const width = defaultDevice.width / defaultPixel;
-
 // 获取缩放比例
-const scale = deviceWidth / width;
+const scale = deviceWidth / defaultDevice.width;
 
 /**
- * 设置text
+ * 适配text
  * @param {number} size
  * @returns {number}
  */
 export const ScaleText = size => {
-  size = Math.round((size * scale) / fontScale);
+  size = Math.round(size * scale / fontScale);
   return size;
 }
 
 /**
- * 设置size
+ * 适配size
  * @param {number} size
  * @returns {number}
  */
