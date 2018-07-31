@@ -10,15 +10,18 @@ $ npm i react-native-scale-size --save
 ```
 #### 2.导入
 ```
-import ScaleSize from 'react-native-scale-size';
+import {
+  ScaleSize,
+  ScaleText
+} from 'react-native-scale-size';
 ```
 
 ### Example
 ```
 const styles = StyleSheet.create({
   content: {
-    width: ScaleSize.scaleSize(100),
-    fontSize: ScaleSize.scaleText(18)
+    width: ScaleSize(100),
+    fontSize: ScaleText(18)
   }
 })
 ```
