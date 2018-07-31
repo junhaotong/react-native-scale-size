@@ -27,6 +27,6 @@ const styles = StyleSheet.create({
 ```
 
 ## 注意
-ScaleText在Android设备下，会根据系统设置字体大小作调整，如不需要，可全面使用ScaleSize
+*** ScaleText在Android设备下，会根据系统设置字体大小作调整，如不需要，可全面使用ScaleSize ***
 
 如对您有帮助，请给个star
